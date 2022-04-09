@@ -1,1 +1,1 @@
-# exploring_bitcoin
+# exploring-bitcoin
