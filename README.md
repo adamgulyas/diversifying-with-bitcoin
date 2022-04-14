@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # exploring-bitcoin
 
 ## Exploring Bitcoin's relationship and performance with various other real assets.
@@ -105,3 +106,22 @@ Chart of moving correlation and beta of all the assets vs. BTC
 
 
 * Questions?
+=======
+# Exploring Bitcoin
+
+## Summary
+
+Testing Bitcoin against various asset classes and indices to examine the presence of any significant relationships.
+
+## Usage
+
+Instructions for setting up a local environment to run the notebook.
+
+## Results
+
+Detail any relationships found.
+
+## Data Sources
+
+List of APIs.
+>>>>>>> 3f4db8ed3c36bc0a6f88fd6552580688afcd0ddb
