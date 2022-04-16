@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-# exploring-bitcoin
+# Exploring Bitcoin
 
 ## Exploring Bitcoin's relationship and performance with various other real assets.
 
 # Contents:
 * Data source & libraries
-* Bitcoin's relationship with GOLD, DXY & EQUITY 
+* Bitcoin's relationship with GOLD, DXY & EQUITY
 * Bitcoin's relationship through time
 * Bitcoin's performance compared to real assets of GOLD, DXY and EQUITY
 * Explore BTC as a hedge to Equity
@@ -17,7 +16,7 @@
 
 
 # Bitcoin's relationship with GOLD, DXY & EQUITY
-* GOLD shares the similar characteric with BTC that both have SCARCITY in supply.  
+* GOLD shares the similar characteric with BTC that both have SCARCITY in supply.
 * GOLD has limited available resources.
 * BTC has a fixed number of 21 million coins.
 
@@ -35,9 +34,9 @@
 
 
 # Decentralized vs. Centralized
-* DXY is a basket of fiat currencies.  Issued by centralized instituions.  
-  Its value can be manipulated through money printing or policy mishaps. 
-* BTC is not valued by any centralized instiutions.  
+* DXY is a basket of fiat currencies.  Issued by centralized instituions.
+  Its value can be manipulated through money printing or policy mishaps.
+* BTC is not valued by any centralized instiutions.
   Its value derived from whatever the market think it is worth.
 
 Chart of moving correlation and beta between DCX and BTC
@@ -106,22 +105,4 @@ Chart of moving correlation and beta of all the assets vs. BTC
 
 
 * Questions?
-=======
-# Exploring Bitcoin
 
-## Summary
-
-Testing Bitcoin against various asset classes and indices to examine the presence of any significant relationships.
-
-## Usage
-
-Instructions for setting up a local environment to run the notebook.
-
-## Results
-
-Detail any relationships found.
-
-## Data Sources
-
-List of APIs.
->>>>>>> 3f4db8ed3c36bc0a6f88fd6552580688afcd0ddb
