@@ -1,108 +1,137 @@
 # Exploring Bitcoin
 
-## Exploring Bitcoin's relationship and performance with various other real assets.
+## Evaluate Bitcoin as a diversification instrument to an all US-equity portfolio.
 
 # Contents:
-* Data source & libraries
-* Bitcoin's relationship with GOLD, DXY & EQUITY
-* Bitcoin's relationship through time
-* Bitcoin's performance compared to real assets of GOLD, DXY and EQUITY
-* Explore BTC as a hedge to Equity
 
+* Data source & libraries
+* Project hypothesis
+* Initial methodology
+* Updated methodology
+* Assumptions
+* Calculations
+* Results and discussion
 
 # Data source & libraries
-* Yahoo API, or any other APIs that were used.
-* List of libraries
+### Data sources
+* Yahoo Finance API
+* Inflation
 
 
-# Bitcoin's relationship with GOLD, DXY & EQUITY
-* GOLD shares the similar characteric with BTC that both have SCARCITY in supply.
-* GOLD has limited available resources.
-* BTC has a fixed number of 21 million coins.
+### Libraries
+* Seaborn
+* Panel
+* Plotly
+* Matplotlib
+* Hvplot
+* Pandas
+* Datetime
+* Tabulate
+* Numpy
+* Dotenv
 
-* Chart of moving correlation and beta between GOLD and BTC
-
-
-
-
-
-
-
-
-
-
+# Project Hypothesis 
+Our group’s project is focused on using python data analytics to test bitcoin as a diversification instrument to an all US equity portfolio. We utilized price data from the Yfinance API To determine the characteristics of BTC in comparison to the S&P 500 and NASDAQ indices (hereafter referred to as “the indices”).
 
 
-# Decentralized vs. Centralized
-* DXY is a basket of fiat currencies.  Issued by centralized instituions.
-  Its value can be manipulated through money printing or policy mishaps.
-* BTC is not valued by any centralized instiutions.
-  Its value derived from whatever the market think it is worth.
-
-Chart of moving correlation and beta between DCX and BTC
+# Our Hypothesis of Bitcoin’s Diversification Characteristics.
+* Investors commonly hold gold or low beta bonds and assets to diversify their portfolio. As investing in cryptocurrencies becomes more popular, investors can also consider holding bitcoin to diversify their portfolio.
+* Similar to gold, BTC has a fixed quantity of units available (21 million coins). Therefore, unlike equity assets, BTC cannot be diluted due to many monetary policy changes.
+* The price of Bitcoin is also largely determined by the perceived value of the asset and may not experience price changes that would be correlated with sudden changes in the US equity market.
 
 
+# Initial Methodology
+Initially, we measured the indices beta in relation to BTC, and we measured the correlation between each index and BTC. Because of the volatile characteristics of BTC, the data we collected appeared to be random in nature and reveal no insight about BTC’s diversification properties.
+
+# Updated Methodology
+
+We then pivoted our analysis to see how BTC behaves under different market environments. We found this to be an interesting proposition because we may be able to gain insight into how BTC behaves when the indices experience a sell-off.
+
+We began by defining the two market environments as a normal market environment and a sell-off market environment. We assumed that a sell-off market environment could be seen as a collection of trading days in our S&P 500 dataset where the percent price change is lower than two standard deviations from the mean percent price change of our dataset. Therefore, we defined our normal market environment to be a collection of all trading days that are not included in the sell-off market environment.
+
+We then tested the correlation between BTC and the S&P 500, and BTC and the NASDAQ within each market environment to see if there is a significant difference in the correlation. We also calculated the beta of the indices in relation to BTC in each market environment. Finally, we compared the sharpe ratio of a portfolio of all US-equities to a portfolio of 50% BTC and 50% US-equities.
+
+The resulting findings would help us understand the implications of including BTC in your portfolio as an asset and whether or not it has any diversification properties.
+
+![image](images_of_charts/std-market-selloff.png)
+Figure 1: There are 50 data points in the S&P 500 data frame below two standard deviations of the mean. The pink area in the normal distribution curve therefore represents the sell-off market environment.
+
+![image](images_of_charts/std-market-normal.png)
+Figure 2: There are 1833 data points in the S&P 500 data frame above two standard deviations of the mean. The pink area in the normal distribution curve therefore represents the the normal market environment.
+
+# Assumptions
+* A Normal Market Environment can be defined as any daily returns that fall above -2 standard deviations of the S&P 500’s daily price return.
+* A sell-off market environment can be defined as any daily returns that fall below -2 standard deviations of the S&P 500’s daily price return.
+* Our data spans from September 17. 2014 to the present day due to BTC’s recent inception. This excludes the majority of the timelines of the S&P 500 Index and the NASDAQ Composite Index.
+
+# Calculations
+### Beta Calculations
+
+Beta is found by calculating the covariance of an asset and a market and dividing that covariance by the variance of the market. 
+
+Therefore, we completed three beta calculations for each market environment:
+### Normal Market Environment
+* Bitcoin’s beta in relation to the S&P 500
+* Bitcoin’s beta in relation to the NASDAQ
+* S&P’s beta in relation to the NASDAQ (as a baseline measurement)
+### Sell-off Market Environment
+* Bitcoin’s beta in relation to the S&P 500
+* Bitcoin’s beta in relation to the NASDAQ
+* S&P’s beta in relation to the NASDAQ (as a baseline measurement)
+
+We then interpreted any significant difference in the results of the two market environments as Bitcoin’s predicted behaviour in each environment.
 
 
+### Correlation Calculations
+We utilized the .corr() function in the pandas library to calculate the correlation of each asset in each environment.
 
+### Sharpe Ratio
+We also calculated the sharpe ratio of a portfolio that is composed of all US-equities and compared that to the sharpe ratio of a portfolio that is half US-equities and half Bitcoin.
 
+# Results and Discussion
 
+### Beta
+In a normal market environment, Bitcoin’s beta is 0.51 against the S&P 500 and 0.53 against the NASDAQ.
+ 
+In a sell-off market environment, Bitcoin’s beta increases to 2.38 against the S&P 500 and 2.24 against the NASDAQ.
+ 
+Therefore, it may be more difficult for investors to hold bitcoin due to the higher volatility and risk characteristics of the asset.
 
+![image](images_of_charts/beta-normal.png)
+Figure 3: Betas of BTC in comparison to each indice in the normal market environment.
 
+![image](images_of_charts/beta-selloff.png)
+Figure 4: Betas of BTC in comparison to each indice in the sell-off market environment.
 
+### Correlation
+In a normal market environment, Bitcoin’s has a correlation of 0.11 awith the S&P 500 and 0.13 against the NASDAQ.
+ 
+In a sell-off market environment, Bitcoin’s beta increases to 2.38 against the S&P 500 and 2.24 against the NASDAQ.
+ 
+The correlation between BTC and each of the indices becomes 5x more correlated. Therefore, if the market experiences a sell-off you would expect BTC to also sell-off about half of the times.
 
+This shows us that BTC may not be a good diversification instrument because when the market sells off, you would want to also hold an asset that trades inversely with the market to hold the value of your portfolio.
 
+![image](images_of_charts/correlation-normal.png)
+Figure 5: correlation of BTC in comparison to each indice in the normal market environment.
 
-# Both BTC and EQUITY have high volatility compared to other asset classes.
+![image](images_of_charts/correlation-selloff.png)
+Figure 6: correlation of BTC in comparison to each indice in the normal market environment.
 
-Chart of moving correlation and beta between S&P and NASDAQ and BTC
+### Sharpe Ratio
+In a normal market environment, Bitcoin has an annualized Sharpe ratio of 1.18, while the S&P 500’s is 0.67 and the Nasdaq’s is 0.79. However, the highest Sharpe ratio comes from a combination of Bitcoin and US equities.
 
+In a market sell-off environment, Bitcoin’s annualized sharpe ratio is -3.41, while the S&P 500’s is a whopping -30.93 and the Nasdaq’s is -33.3.
 
+This shows us that there is an advantage to be had when investing in Bitcoin.
 
+![image](images_of_charts/sharpe-normal.png)
+Figure 7: correlation of BTC in comparison to each indice in the normal market environment.
 
+![image](images_of_charts/sharpe-selloff.png)
+Figure 8: correlation of BTC in comparison to each indice in the sell-off market environment.
 
+### Conclusion
+Looking only at correlation and beta, Bitcoin seems like a poor diversifier to an all-US equity portfolio, and would add to the volatility.
 
-
-
-
-Chart of moving correlation and beta of all the assets vs. BTC
-
-
-
-
-
-
-
-
-
-Table of return, standard and sharpe:
-
-Assets	Return	Std	Sharpe
-SPY	xx	xx	xx
-QQQ	xx	xx	xx
-GLD	xx	xx	xx
-DXY	xx	xx	xx
-BTC	xx	xx	xx
-
-
-Table of correlation of assets with BTC
-
-Assets	Corr
-SPY	xx
-QQQ	xx
-GLD	xx
-DXY	xx
-BTC	1
-
-
-Chart of moving correlation and beta of all the assets vs. BTC
-* Here we want to point out that when market sells off BTC behaves the same as equity.  Not a good hedge.
-
-
-
-
-
-
-
-* Questions?
-
+However, after viewing the Sharpe ratio comparison, Bitcoin looks like a feasible diversifying instrument.
