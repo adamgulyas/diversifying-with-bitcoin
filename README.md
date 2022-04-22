@@ -1,6 +1,6 @@
 # Exploring Bitcoin
 
-#### The goal of this analysis is to evaluate Bitcoin as a diversification instrument to an all US-equity portfolio.
+This analysis aims to evaluate Bitcoin as a diversification instrument to an all US-equity portfolio.
 
 ## Contents
 
