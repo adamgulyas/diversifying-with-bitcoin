@@ -177,6 +177,7 @@ Figure 7: correlation of BTC in comparison to each indice in the normal market e
 Figure 8: correlation of BTC in comparison to each indice in the sell-off market environment.
 
 ### Conclusion
-Looking only at correlation and beta, Bitcoin seems like a poor diversifier to an all-US equity portfolio, and would add to the volatility.
 
-However, after viewing the Sharpe ratio comparison, Bitcoin looks like a feasible diversifying instrument.
+Bitcoin is even more correlated with the major indices during sell-offs, and is also more volatile. If liquidity is needed or the investor has a low risk tolerance, Bitcoin would not be an ideal diversifier.
+
+If the time horizon is long-term, risk tolerance is high, and maximum returns are the investment goal, diversifying an all-US equity portfolio with Bitcoin could be more profitable.
