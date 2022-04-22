@@ -2,7 +2,7 @@
 
 #### The goal of this analysis is to evaluate Bitcoin as a diversification instrument to an all US-equity portfolio.
 
-# Contents
+## Contents
 
 * Usage
 * Data source & libraries
@@ -62,8 +62,7 @@ You must have Anaconda and Jupyter Lab installed and be running Python >= 3.7 to
     conda list plotly
     ```
 
-# Data Sources and Libraries
-### Data sources
+### Data ources
 * Yahoo Finance API
 
 
@@ -75,20 +74,20 @@ You must have Anaconda and Jupyter Lab installed and be running Python >= 3.7 to
 * Panel
 * Tabulate
 
-# Project Hypothesis
+## Project Hypothesis
 Our group’s project is focused on using python data analytics to test bitcoin as a diversification instrument to an all US equity portfolio. We utilized price data from the Yfinance API To determine the characteristics of BTC in comparison to the S&P 500 and NASDAQ indices (hereafter referred to as “the indices”).
 
 
-# Our Hypothesis of Bitcoin’s Diversification Characteristics.
+## Our Hypothesis of Bitcoin’s Diversification Characteristics.
 * Investors commonly hold gold or low beta bonds and assets to diversify their portfolio. As investing in cryptocurrencies becomes more popular, investors can also consider holding bitcoin to diversify their portfolio.
 * Similar to gold, BTC has a fixed quantity of units available (21 million coins). Therefore, unlike equity assets, BTC cannot be diluted due to many monetary policy changes.
 * The price of Bitcoin is also largely determined by the perceived value of the asset and may not experience price changes that would be correlated with sudden changes in the US equity market.
 
 
-# Initial Methodology
+## Initial Methodology
 Initially, we measured the indices beta in relation to BTC, and we measured the correlation between each index and BTC. Because of the volatile characteristics of BTC, the data we collected appeared to be random in nature and revealed no insight about BTC’s diversification properties.
 
-# Updated Methodology
+## Updated Methodology
 
 We then pivoted our analysis to see how BTC behaves under different market environments. We found this to be an interesting proposition because we may be able to gain insight into how BTC behaves when the indices experience a sell-off.
 
@@ -106,29 +105,33 @@ Figure 1: There are 1833 data points in the S&P 500 data frame above -2 standard
 
 Figure 2: There are 50 data points in the S&P 500 data frame below -2 standard deviations from the mean. The pink area in the normal distribution curve therefore represents the sell-off market environment.
 
-# Assumptions
+## Assumptions
+
 * A Normal Market Environment can be defined as any daily returns that fall above -2 standard deviations of the S&P 500’s daily price return.
 * A sell-off market environment can be defined as any daily returns that fall below -2 standard deviations of the S&P 500’s daily price return.
 * Our data spans from September 17. 2014 to the present day due to BTC’s recent inception. This excludes the majority of the timelines of the S&P 500 Index and the NASDAQ Composite Index.
 
-# Calculations
+## Calculations
 
 ### Beta Calculations
 
 Beta is found by calculating the covariance of an asset and a market and dividing that covariance by the variance of the market.
 
 Therefore, we completed three beta calculations for each market environment:
+
 ### Normal Market Environment
+
 * Bitcoin’s beta in relation to the S&P 500
 * Bitcoin’s beta in relation to the NASDAQ
 * S&P’s beta in relation to the NASDAQ (as a baseline measurement)
+
 ### Sell-off Market Environment
+
 * Bitcoin’s beta in relation to the S&P 500
 * Bitcoin’s beta in relation to the NASDAQ
 * S&P’s beta in relation to the NASDAQ (as a baseline measurement)
 
 We then interpreted any significant difference in the results of the two market environments as Bitcoin’s predicted behaviour in each environment.
-
 
 ### Correlation Calculations
 We utilized the .corr() function in the pandas library to calculate the correlation of each asset in each environment.
@@ -136,7 +139,7 @@ We utilized the .corr() function in the pandas library to calculate the correlat
 ### Sharpe Ratio
 We also calculated the sharpe ratio of a portfolio that is composed of all US-equities and compared that to the sharpe ratio of a portfolio that is half US-equities and half Bitcoin.
 
-# Results and Discussion
+## Results
 
 ### Beta
 In a normal market environment, Bitcoin’s beta is 0.51 against the S&P 500 and 0.53 against the NASDAQ.
@@ -171,7 +174,7 @@ In a normal market environment, Bitcoin has an annualized Sharpe ratio of 1.18, 
 
 In a market sell-off environment, Bitcoin’s annualized sharpe ratio is -3.41, while the S&P 500’s is a whopping -30.93 and the Nasdaq’s is -33.3.
 
-This shows us that there is an advantage to be had when investing in Bitcoin.
+This shows that there is an advantage to be had when investing in Bitcoin.
 
 ![image](images/sharpe-normal.png)
 Figure 7: correlation of BTC in comparison to each indice in the normal market environment.
@@ -179,7 +182,7 @@ Figure 7: correlation of BTC in comparison to each indice in the normal market e
 ![image](images/sharpe-selloff.png)
 Figure 8: correlation of BTC in comparison to each indice in the sell-off market environment.
 
-### Conclusion
+## Conclusion
 
 Bitcoin is even more correlated with the major indices during sell-offs, and is also more volatile. If liquidity is needed or the investor has a low risk tolerance, Bitcoin would not be an ideal diversifier.
 
