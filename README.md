@@ -98,11 +98,11 @@ We then tested the correlation between BTC and the S&P 500, and BTC and the NASD
 
 The resulting findings would help us understand the implications of including BTC in your portfolio as an asset and whether or not it has any diversification properties.
 
-![image](images_of_charts/std-market-selloff.png)
-Figure 1: There are 50 data points in the S&P 500 data frame below two standard deviations of the mean. The pink area in the normal distribution curve therefore represents the sell-off market environment.
+![Standard Deviation - Normal Market](images/std-market-normal.png)
+Figure 1: There are 1833 data points in the S&P 500 data frame above -2 standard deviations from the mean. The pink area in the normal distribution curve therefore represents the the normal market environment.
 
-![image](images_of_charts/std-market-normal.png)
-Figure 2: There are 1833 data points in the S&P 500 data frame above two standard deviations of the mean. The pink area in the normal distribution curve therefore represents the the normal market environment.
+![Standard Deviation - Market Sell-off](images/std-market-selloff.png)
+Figure 2: There are 50 data points in the S&P 500 data frame below -2 standard deviations from the mean. The pink area in the normal distribution curve therefore represents the sell-off market environment.
 
 # Assumptions
 * A Normal Market Environment can be defined as any daily returns that fall above -2 standard deviations of the S&P 500’s daily price return.
@@ -110,6 +110,7 @@ Figure 2: There are 1833 data points in the S&P 500 data frame above two standar
 * Our data spans from September 17. 2014 to the present day due to BTC’s recent inception. This excludes the majority of the timelines of the S&P 500 Index and the NASDAQ Composite Index.
 
 # Calculations
+
 ### Beta Calculations
 
 Beta is found by calculating the covariance of an asset and a market and dividing that covariance by the variance of the market.
@@ -142,10 +143,10 @@ In a sell-off market environment, Bitcoin’s beta increases to 2.38 against the
 
 Therefore, it may be more difficult for investors to hold bitcoin due to the higher volatility and risk characteristics of the asset.
 
-![image](images_of_charts/beta-normal.png)
+![Beta - ](images/beta-normal.png)
 Figure 3: Betas of BTC in comparison to each indice in the normal market environment.
 
-![image](images_of_charts/beta-selloff.png)
+![image](images/beta-selloff.png)
 Figure 4: Betas of BTC in comparison to each indice in the sell-off market environment.
 
 ### Correlation
@@ -157,10 +158,10 @@ The correlation between BTC and each of the indices becomes 5x more correlated. 
 
 This shows us that BTC may not be a good diversification instrument because when the market sells off, you would want to also hold an asset that trades inversely with the market to hold the value of your portfolio.
 
-![image](images_of_charts/correlation-normal.png)
+![image](images/correlation-normal.png)
 Figure 5: correlation of BTC in comparison to each indice in the normal market environment.
 
-![image](images_of_charts/correlation-selloff.png)
+![image](images/correlation-selloff.png)
 Figure 6: correlation of BTC in comparison to each indice in the normal market environment.
 
 ### Sharpe Ratio
@@ -170,10 +171,10 @@ In a market sell-off environment, Bitcoin’s annualized sharpe ratio is -3.41, 
 
 This shows us that there is an advantage to be had when investing in Bitcoin.
 
-![image](images_of_charts/sharpe-normal.png)
+![image](images/sharpe-normal.png)
 Figure 7: correlation of BTC in comparison to each indice in the normal market environment.
 
-![image](images_of_charts/sharpe-selloff.png)
+![image](images/sharpe-selloff.png)
 Figure 8: correlation of BTC in comparison to each indice in the sell-off market environment.
 
 ### Conclusion
