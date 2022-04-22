@@ -62,7 +62,7 @@ You must have Anaconda and Jupyter Lab installed and be running Python >= 3.7 to
     conda list plotly
     ```
 
-### Data ources
+### Data Sources
 * Yahoo Finance API
 
 
