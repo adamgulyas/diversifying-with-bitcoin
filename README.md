@@ -99,9 +99,11 @@ We then tested the correlation between BTC and the S&P 500, and BTC and the NASD
 The resulting findings would help us understand the implications of including BTC in your portfolio as an asset and whether or not it has any diversification properties.
 
 ![Standard Deviation - Normal Market](images/std-market-normal.png)
+
 Figure 1: There are 1833 data points in the S&P 500 data frame above -2 standard deviations from the mean. The pink area in the normal distribution curve therefore represents the the normal market environment.
 
 ![Standard Deviation - Market Sell-off](images/std-market-selloff.png)
+
 Figure 2: There are 50 data points in the S&P 500 data frame below -2 standard deviations from the mean. The pink area in the normal distribution curve therefore represents the sell-off market environment.
 
 # Assumptions
@@ -143,7 +145,7 @@ In a sell-off market environment, Bitcoin’s beta increases to 2.38 against the
 
 Therefore, it may be more difficult for investors to hold bitcoin due to the higher volatility and risk characteristics of the asset.
 
-![Beta - ](images/beta-normal.png)
+![image](images/beta-normal.png)
 Figure 3: Betas of BTC in comparison to each indice in the normal market environment.
 
 ![image](images/beta-selloff.png)
