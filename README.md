@@ -1,4 +1,4 @@
-# Exploring Bitcoin
+# Exploring Bitcoin: Is it a Good Portfolio Diversifier?
 
 This analysis aims to evaluate Bitcoin as a diversification instrument to an all US-equity portfolio.
 
