@@ -75,10 +75,10 @@ You must have Anaconda and Jupyter Lab installed and be running Python >= 3.7 to
 * Tabulate
 
 ## Project Hypothesis
-Our group’s project is focused on using python data analytics to test bitcoin as a diversification instrument to an all US equity portfolio. We utilized price data from the Yfinance API To determine the characteristics of BTC in comparison to the S&P 500 and NASDAQ indices (hereafter referred to as “the indices”).
+This project is focused on using quantitative analysis in python to test bitcoin as a diversification instrument to an all US equity portfolio. Price data was retrieved from the yFinance API To determine the characteristics of BTC in comparison to the S&P 500 and NASDAQ indices (hereafter referred to as “the indices”).
 
 
-## Our Hypothesis of Bitcoin’s Diversification Characteristics.
+## Hypothesis of Bitcoin’s Diversification Characteristics
 * Investors commonly hold gold or low beta bonds and assets to diversify their portfolio. As investing in cryptocurrencies becomes more popular, investors can also consider holding bitcoin to diversify their portfolio.
 * Similar to gold, BTC has a fixed quantity of units available (21 million coins). Therefore, unlike equity assets, BTC cannot be diluted due to many monetary policy changes.
 * The price of Bitcoin is also largely determined by the perceived value of the asset and may not experience price changes that would be correlated with sudden changes in the US equity market.
