@@ -93,7 +93,7 @@ We then pivoted our analysis to see how BTC behaves under different market envir
 
 We began by defining the two market environments as a normal market environment and a sell-off market environment. We assumed that a sell-off market environment could be seen as a collection of trading days in our S&P 500 dataset where the percent price change is lower than two standard deviations from the mean percent price change of our dataset. Therefore, we defined our normal market environment to be a collection of all trading days that are not included in the sell-off market environment.
 
-We then tested the correlation between BTC and the S&P 500, and BTC and the NASDAQ within each market environment to see if there is a significant difference in the correlation. We also calculated the beta of the indices in relation to BTC in each market environment. Finally, we compared the sharpe ratio of a portfolio of all US-equities to a portfolio of 50% BTC and 50% US-equities.
+The correlation between BTC and the S&P 500, and BTC and the NASDAQ was tested within each market environment to see if there is a significant difference in the correlation. The beta of the indices in relation to BTC in each market environment were then calculated. Finally, the sharpe ratios of a portfolio with all US-equities and a portfolio with 50% BTC and 50% US-equities were compared.
 
 The resulting findings would help us understand the implications of including BTC in your portfolio as an asset and whether or not it has any diversification properties.
 
